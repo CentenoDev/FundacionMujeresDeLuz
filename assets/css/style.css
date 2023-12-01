@@ -242,6 +242,17 @@ body { background: var(--white); }
 :is(.navbar-link, .header-action-link):is(:hover, :focus) { color: var(--majorelle-blue); }
 
 
+/* Agrega esto a tu archivo de estilo CSS (style.css) */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 100%;
+  max-height: 50px; /* Ajusta este valor según sea necesario */
+  height: auto;
+}
 
 
 
@@ -289,10 +300,11 @@ body { background: var(--white); }
 
 .hero .btn-primary { margin-inline: auto; }
 
-.hero-banner img { 
-  width: 100%;
-  margin-top: -250px;
- }
+.hero-banner img {
+  max-width: 100%;
+  height: auto; /* Esto asegura que la altura se ajuste proporcionalmente a la anchura */
+}
+
 
 
 
