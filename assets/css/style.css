@@ -110,6 +110,8 @@ textarea {
 html {
   font-family: var(--ff-quicksand);
   scroll-behavior: smooth;
+  
+  
 }
 
 body { background: var(--white); }
@@ -154,8 +156,8 @@ body { background: var(--white); }
 }
 
 .btn-primary:is(:hover, :focus) {
-  --majorelle-blue: hsl(245, 67%, 55%);
-  box-shadow: 0 3px 10px hsla(245, 67%, 59%, 0.5);
+  --majorelle-blue: #F6ED81;
+  box-shadow: 0 3px 10px #F6ED81;
 }
 
 .btn-outline { 
@@ -166,11 +168,11 @@ body { background: var(--white); }
 .btn-outline:is(:hover, :focus) {
   background: var(--majorelle-blue);
   color: var(--white);
-  box-shadow: 0 3px 10px hsla(245, 67%, 59%, 0.5);
+  box-shadow: 0 3px 10px #F6ED81;
 }
 
 .btn-secondary {
-  background: hsla(245, 67%, 59%, 0.15);
+  background: #F6ED81;
   color: var(--majorelle-blue);
 }
 
@@ -242,7 +244,7 @@ body { background: var(--white); }
 :is(.navbar-link, .header-action-link):is(:hover, :focus) { color: var(--majorelle-blue); }
 
 
-/* Agrega esto a tu archivo de estilo CSS (style.css) */
+
 .logo {
   display: flex;
   align-items: center;
@@ -250,7 +252,7 @@ body { background: var(--white); }
 
 .logo-image {
   max-width: 100%;
-  max-height: 50px; /* Ajusta este valor según sea necesario */
+  max-height: 50px; 
   height: auto;
 }
 
@@ -267,7 +269,8 @@ body { background: var(--white); }
 
 .hero-content { margin-bottom: 80px; }
 
-.hero-title { margin-bottom: 25px; }
+.hero-title { margin-bottom: 25px; 
+color: #85307F;}
 .h1.hero-title {
   font-size: 40px; /* Ajusta el tamaño de la fuente según tus preferencias */
 }
@@ -513,69 +516,108 @@ body { background: var(--white); }
 
 
 /*-----------------------------------*\
-  #BLOG
+  #Donaciones
 \*-----------------------------------*/
 
-.blog { padding-block: var(--section-padding); }
+#donaciones {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
 
-.blog .section-title { margin-bottom: 20px; }
-
-.blog .section-text { margin-bottom: 40px; }
-
-.blog-list {
-  display: grid;
-  gap: 30px;
+}
+.donar-title { margin-bottom: 25px; }
+.h1.donar-title {
+  font-size: 40px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+.donation-buttons {
+  margin-top: 20px;
 }
 
-.blog-banner { margin-bottom: 20px; }
-
-.blog-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+.donation-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #F6ED81;
+  border: 2px solid #F6ED81;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.blog-meta {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  font-size: var(--fs-6);
-  text-transform: uppercase;
-  color: var(--cool-gray);
-  margin-bottom: 10px;
+.donation-button:hover {
+  background-color: #F6ED81;
+  border-color: #F6ED81;
+}
+.donation-buttons-V2 {
+  margin-top: 20px;
 }
 
-.blog-meta span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.donation-button-V2 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #F6ED81;
+  border: 2px solid #F6ED81;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.blog-title {
-  font-size: var(--fs-3);
-  color: var(--independence);
+.donation-button-.donation-button-V2 {
+  background-color: #F6ED81;
+  border-color: #F6ED81;
 }
 
-.blog-text {
-  color: var(--cool-gray);
-  font-size: var(--fs-6);
-  line-height: 1.7;
-  margin-bottom: 15px;
+#donaciones {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.blog-link-btn {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--majorelle-blue);
-  font-weight: var(--fw-600);
+.h2, .h3, .card-text {
+  color: #5F1E57;
 }
 
-.blog-link-btn:is(:hover, :focus) { color: var(--sapphire); }
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+}
 
+.card-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
 
+/* Estilos de los botones de donación */
+.donation-buttons a,
+.donation-buttons-V2 a {
+  text-decoration: none;
+  color: #F6ED81;
+  background-color: #A5589E;
+  padding: 15px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.donation-buttons a:hover,
+.donation-buttons-V2 a:hover {
+  background-color: #A5589E;
+}
+
+/* Estilo del enlace en el último párrafo */
+.card-text a {
+  color: #5F1E57;
+  text-decoration: underline;
+}
 
 
 
